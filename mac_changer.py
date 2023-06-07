@@ -97,7 +97,7 @@ def main():
     # Check status
     changed_mac = netifaces.ifaddresses(selected_interface)[netifaces.AF_LINK][0]["addr"]
     if changed_mac == new_mac:
-        print(f"Interface {selected_interface} MAC address changed from {selected_interface} to {changed_mac}\n")
+        print(f"Interface {selected_interface} MAC address changed to {changed_mac}\n")
         print(separator_01)
     else:
         print("Something went wrong! Please try again.\n")
